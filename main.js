@@ -39,7 +39,7 @@ const displayResult = (data) => {
 	icon.alt = 'Weather condition'
 	weather.innerText = data.weather[0].main;
 	hi_low.innerHTML = `${Math.round(data.main.temp_min)}<span>&deg;C</span> / ${Math.round(data.main.temp_max)}<span>&deg;C</span>`;
-	pressure.innerText = `${data.main.pressure} kPa`
+	pressure.innerText = `${data.main.pressure} hPa`
 }
 
 const setDate = () => {
