@@ -19,7 +19,7 @@ const setCity = (e) => {
 }
 
 const getData = (querry) => {
-	fetch(`http://api.openweathermap.org/data/2.5/weather?q=${querry}&appid=${API_KEY}&units=metric&lang=en`)
+	fetch(`https://api.openweathermap.org/data/2.5/weather?q=${querry}&appid=${API_KEY}&units=metric&lang=en`)
 		.then(response => {
 			if (response.ok) {
 				return response
@@ -35,7 +35,7 @@ const displayResult = (data) => {
 	city.innerText = data.name + ', ' + data.sys.country;
 	date.innerText = setDate();
 	temp.innerHTML = `${Math.round(data.main.temp)}<span>&deg;c</span>`;
-	icon.src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+	icon.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
 	icon.alt = 'Weather condition'
 	weather.innerText = data.weather[0].main;
 	hi_low.innerHTML = `${Math.round(data.main.temp_min)}<span>&deg;C</span> / ${Math.round(data.main.temp_max)}<span>&deg;C</span>`;
