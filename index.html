@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://kit.fontawesome.com/8c62268f44.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="wallpaper"></div>
+	<div class="wrapper">
+		<header class="search">
+			<form class="search__form" id="search-form">
+				<input type="text" class="search__input" id="search-input" placeholder="Wpisz nazwę miasta..."
+					autocomplete="off">
+				<button class="search__button" id="search-button">Wyszukaj <i class="fas fa-long-arrow-alt-right"></i></button>
+			</form>
+		</header>
+		<main class="panel">
+			<div class="panel__location">
+				<div class="city"></div>
+				<div class="date"></div>
+			</div>
+			<div class="panel__current">
+				<div class="temp"></div>
+				<div class="weather">
+					<div class="weather__condition"></div>
+					<img src="" alt="" class="weather__icon">
+				</div>
+				<div class="hi-low"></div>
+				<div class="pressure"></div>
+			</div>
+		</main>
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>
